@@ -28,10 +28,10 @@ $queryResult = Student::getAllStudentInfo();
     </tr>
     <?php while($student = mysqli_fetch_assoc($queryResult)) {?>
     <tr>
-        <td><?php echo ['id']?></td>
-        <td>Demo</td>
-        <td>Demo</td>
-        <td>Demo</td>
+        <td><?php echo $student ['id']?></td>
+        <td><?php echo $student ['name']?></td>
+        <td><?php echo $student ['email']?></td>
+        <td><?php echo $student ['mobile']?></td>
     </tr>
     <?php } ?>
 </table>
