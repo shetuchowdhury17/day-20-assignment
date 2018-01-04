@@ -8,13 +8,8 @@ class Student
 {
     public function saveStudentInfo($data)
     {
-//        echo '<pre>';
-//        print_r($data);
-//-------------------------------------------------------------------------
         $link = mysqli_connect('localhost', 'root', '', 'bitm');
-//        echo '<pre>';
-//        print_r($link);
-        $sql = "INSERT INTO students (name, email, mobile) VALUES ('$data[name]', '$data[email]', '$data[mobile]')";
+        $sql = "INSERT INTO students (first_name, last_name, mobile_number, email_address, address) VALUES ('$data[first_name]', '$data[last_name]', '$data[mobile_number]', '$data[email_address]', '$data[address]')";
         if(mysqli_query($link, $sql))
         {
             $message = "Student info save successfully";

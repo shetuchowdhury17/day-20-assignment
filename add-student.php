@@ -15,23 +15,33 @@ if (isset($_POST['btn']))
 <form action="" method="post">
     <table>
         <tr>
-            <th>Name</th>
-            <td><input type="text" name="name"></td>
+            <th align="left">First Name</th>
+            <td><input type="text" name="first_name"></td>
         </tr>
 
         <tr>
-            <th>Email</th>
-            <td><input type="text" name="email"></td>
+            <th align="left">Last Name</th>
+            <td><input type="text" name="last_name"></td>
         </tr>
 
         <tr>
-            <th>Mobile</th>
-            <td><input type="number" name="mobile"></td>
+            <th align="left">Mobile Number</th>
+            <td><input type="number" name="mobile_number"></td>
+        </tr>
+
+        <tr>
+            <th align="left">Email Address</th>
+            <td><input type="text" name="email_address"></td>
+        </tr>
+
+        <tr align="left">
+            <th>Address</th>
+            <td><input type="text" name="address"></td>
         </tr>
 
         <tr>
             <th></th>
-            <td><input type="submit" name="btn" value="Submit"></td>
+            <td><input type="submit" name="btn" value="SAVE"></td>
         </tr>
     </table>
 </form>
